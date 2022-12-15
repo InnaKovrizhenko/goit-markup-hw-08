@@ -1,0 +1,33 @@
+/* секція шапка */
+.hat {
+    background-color: #2F303A;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/headerimg.jpg);
+
+    &__title {
+        color: getColor('background');
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+
+        margin-top: 0;
+        margin-bottom: 30px;
+        width: 696px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,37 @@
+/* логотип */
+.logo {
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    &__accent {
+        color: getColor('accent');
+    }
+}
+
+.logo__text {
+    color: #000000;
+    margin: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: getColor('accent');
+    }
+}
+
+.logo__text--inverse {
+    color: getColor('background');
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: getColor('accent');
+    }
+}
