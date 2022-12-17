@@ -10,8 +10,9 @@
             display: block;
         }
         &__item {
-            width: 450px;
+            margin: 15px 0px;
         }
+
         &__title {
             font-weight: 700;
             font-size: 14px;
@@ -28,7 +29,6 @@
             margin-bottom: 0;
         }
         &__tumb {
-            width: 450px;
             height: 120px;
             background-color: #F5F4FA;
             border-radius: 4px;
@@ -40,13 +40,41 @@
             margin-bottom: 30px;
         }
     
-    
+    @include media-min(tablet){
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: calc((100% - 4 * 15px) / 2);
+
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+                flex-basis: 50%;
+                margin: -15px;
+                padding: 0;
+            }
+            &__item {
+                width: 354px;
+                margin: 15px;
+            }
+            &__title {
+                text-align: left;
+            }
+            &__text {
+                text-align: left;
+            }
+            &__tumb {
+                width: 354px;
+            }
+    }
+        
     @include media-min(desktop){
         padding-top: 94px;
         padding-bottom: 94px;
+        width: auto;
     
             &__list {
                 display: flex;
+                flex-wrap: nowrap;
                 justify-content: space-between;
                 padding: 0;
             }
@@ -54,21 +82,13 @@
                 width: 270px;
             }
             &__title {
-                font-weight: 700;
-                font-size: 14px;
-                line-height: 16px;
-                margin-top: 0;
-                margin-bottom: 10px;
+                text-align: left;
             }
-
+            &__text {
+                text-align: left;
+            }
             &__tumb {
                 width: 270px;
-                height: 120px;
-                background-color: #F5F4FA;
-                border-radius: 4px;
-                text-align: center;
-                padding: 25px 100px;
-                margin-bottom: 30px;
             }
     }
 }
