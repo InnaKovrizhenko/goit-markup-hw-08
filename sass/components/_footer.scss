@@ -26,7 +26,6 @@
     &__box-top {
         display: block;
         flex-direction: column;
-        align-items: center;
         margin: 0;
         margin-bottom: 60px;
     }
@@ -77,6 +76,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     &__input {
         font-family: Roboto;
@@ -90,6 +90,7 @@
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         margin-bottom: 20px;
+        padding-left: 15px;
     }
     &__icon-fly {
         fill:  getColor('background');
@@ -99,15 +100,30 @@
     @include media-min(tablet){
         & .container {
             display: flex;
+            flex-direction: column;
         }
         
         &__box-top {
             display: flex;
-            flex-wrap: nowrap;
+            flex-direction: row;
             justify-content: space-around;
+
+        }
+        &__box-address {
+            margin-bottom: 0;
+        }
+        &__box-invite {
+            margin: 0;
+            padding: 0;
+        }
+        &__box-spam {
+            display: block;
             align-items: center;
             margin: 0;
-            margin-bottom: 60px;
+            width: 100%;
+        }
+        &__input {
+            width: 450px;
         }
     }
 
@@ -115,7 +131,34 @@
         & .container {
             display: flex;
             flex-direction: row;
-        } 
+        }
+        &__box-address {
+            text-align: left;
+            align-items: flex-start;
+            margin-right: 70px;
+        }
+        &__box-invite {
+            align-items: flex-start;
+            margin-right: 93px;
+        }
+        &__box-spam {
+            flex-direction: row;
+            text-align: left;
+
+            margin: 0;
+            padding: auto;
+            width: 100%;
+        }
+        &__feedback {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: baseline;
+            flex-direction: row;
+        }
+        &__input {
+            width: 358px;
+            margin-right: 12px;
+        }
  
     }
 
@@ -136,6 +179,12 @@
         letter-spacing: 0.03em;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
+        &:hover,
+        &:focus {
+        color: getColor('accent');
+        }
+    }
+    .footer__contacts {
         &:hover,
         &:focus {
         color: getColor('accent');

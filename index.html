@@ -11,22 +11,22 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body class="page">
-                           <!-- Шапка сайту -->
-<!-- <header class="header">
+    <!-- Шапка сайту -->
+<header class="header">
     <div class="container">
-        <nav class="header__navigation"> -->
-                            <!-- логотип -->
-        <!-- <a href="./index.html" class="logo">
+        <!-- <nav class="header__navigation"> -->
+        <!-- логотип -->
+        <a href="./index.html" class="logo">
             <p class="logo__text" lang="en"><span class="logo__accent">Web</span>Studio</p> 
-        </a> -->
-                            <!-- навігація сайту -->
+        </a>
+        <!-- навігація сайту -->
         <!-- <ul class="site-nav list">
             <li> <a class="site-nav__link site-nav__link--current" href="./index.html">Cтудія</a></li>
             <li> <a class="site-nav__link" href="./portfolio.html">Портфоліо</a></li>
             <li> <a class="site-nav__link" href="">Контакти</a></li>
         </ul>
         </nav> -->
-                            <!-- навігація авторизації -->
+        <!-- навігація авторизації -->
         <!-- <ul class="auth-nav list">
             <li>
                 <a class="auth-nav__link-mail" href="mailto:info@devstudio.com">
@@ -35,7 +35,7 @@
                     </svg>
                     <span>info@devstudio.com</span>
                 </a>
-            </li>>
+            </li>
             <li>
                 <a class="auth-nav__link-tel" href="tel:+380961111111">
                     <svg class="auth-nav__icon" width="10" height="16">
@@ -44,9 +44,22 @@
                     <span>+38 096 111 11 11</span>
                 </a>
             </li>
-        </ul>
+        </ul> -->
+        <button type="button" class="burger is-open"
+        data-menu-button 
+        aria-expanded="false"
+        aria-controls="menu-container">
+      <svg width="40" height="40" aria-label="перемикач мобільного меню">
+        <use class="burger__icon--open" href="./images/icons.svg#icon-menu_40px"></use>
+        <use class="burger__icon--close" href="./images/icons.svg#icon-close_40px"></use>
+      </svg>
+    </button>
+    <div class="menu-container" id="menu-container" data-menu>
+        Контент
     </div>
-</header> -->
+
+    </div>
+</header>
 
 <main>
 
@@ -298,7 +311,7 @@
     </div>
         <div class="footer__box-spam">
             <h3 class="footer__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
-        <span class="footer__feedback">
+        <div class="footer__feedback">
         <label for="mail"></label>
         <input type="email" name="mail" id="mail" class="footer__input" placeholder="E-mail"/>
         <button type="submit" class="button">Підписатися
@@ -306,11 +319,12 @@
                 <use href="./images/icons.svg#icon-send"></use>
             </svg> 
         </button>
-        </span>
+        </div>
         </div>
         </div>
     </div>
 </footer>
-<script src="./js/modal.js"></script>   
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script> 
 </body>
 </html>
