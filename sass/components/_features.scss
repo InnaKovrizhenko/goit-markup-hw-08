@@ -43,7 +43,7 @@
     @include media-min(tablet){
         padding-top: 60px;
         padding-bottom: 60px;
-        width: calc((100% - 4 * 15px) / 2);
+        width: 100%;
 
             &__list {
                 display: flex;
@@ -53,7 +53,7 @@
                 padding: 0;
             }
             &__item {
-                width: 354px;
+                width: calc((100% - 4 * 15px) / 2);
                 margin: 15px;
             }
             &__title {
@@ -63,7 +63,7 @@
                 text-align: left;
             }
             &__tumb {
-                width: 354px;
+                width: 100%;
             }
     }
         

@@ -115,8 +115,7 @@
             </div>
         </section> -->
 
-                                                <!-- секція особливості -->
-    <div>
+<!-- секція особливості -->
         <section class="section-features">
             <div class="container">
             <ul class="section-features__list list">
@@ -159,9 +158,8 @@
             </ul>
             </div>
         </section>
-    </div>
 
-                                            <!-- секція чим ми займаємося -->
+<!-- секція чим ми займаємося -->
     <div>
         <section class="section-task">
             <div class="container">
@@ -191,13 +189,13 @@
         </section>
     </div>
 
-                                            <!-- секція наша команда -->
+<!-- секція наша команда -->
         <section class="section-team">
             <div class="container">
             <h2 class="section-team__title">Наша команда</h2>
             <ul class="section-team__list list">
                 <li class="section-team__card">
-                    <img src="./images/imgd.jpg" alt="Ігор Дем'яненко" width="270" height="260"/>
+                    <img class="section-team__photo" src="./images/imgd.jpg" alt="Ігор Дем'яненко" width="270" height="260"/>
                     <h3 class="section-team__name">Ігор Дем'яненко</h3>
                     <p class="section-team__profession" lang="en">Product Designer</p>
                     <ul class="social-icons list">
@@ -208,7 +206,7 @@
                     </ul>
                 </li>
                 <li class="section-team__card">
-                    <img src="./images/imgr.jpg" alt="Ольга Рєпіна" width="270" height="260"/>
+                    <img class="section-team__photo" src="./images/imgr.jpg" alt="Ольга Рєпіна" width="270" height="260"/>
                     <h3 class="section-team__name">Ольга Рєпіна</h3>
                     <p class="section-team__profession" lang="en">Frontend Developer</p>
                     <ul class="social-icons list">
@@ -219,7 +217,7 @@
                     </ul>                
                 </li>
                 <li class="section-team__card">
-                    <img src="./images/imgt.jpg" alt="Микола Тарасов" width="270" height="260"/>
+                    <img class="section-team__photo" src="./images/imgt.jpg" alt="Микола Тарасов" width="270" height="260"/>
                     <h3 class="section-team__name">Микола Тарасов</h3>
                     <p class="section-team__profession" lang="en">Marketing</p>
                     <ul class="social-icons list">
@@ -230,7 +228,7 @@
                     </ul>                
                 </li>
                 <li class="section-team__card">
-                    <img src="./images/imge.jpg" alt="Михайло Єрмаков" width="270" height="260"/>
+                    <img class="section-team__photo" src="./images/imge.jpg" alt="Михайло Єрмаков" width="270" height="260"/>
                     <h3 class="section-team__name">Михайло Єрмаков</h3>
                     <p class="section-team__profession" lang="en">UI Designer</p>
                     <ul class="social-icons list">
@@ -244,41 +242,39 @@
             </div>
         </section>
 
-                                        <!-- постійні клієнти -->
-<!-- <div>
+<!-- постійні клієнти -->
     <section class="section-clients">
         <div class="container">
         <h2 class="section-clients__title">Постійні клієнти</h2>
         <ul class="section-clients__list list">
-            <li>
+            <li class="section-clients__tumb">
                <a class="section-clients__link link" href=""> <svg class="section-clients__icon" width="106" height="60"><use href="./images/icons.svg#icon-logofirst"></use> </svg> </a> 
             </li>
-            <li>
+            <li class="section-clients__tumb">
                 <a class="section-clients__link link" href=""> <svg class="section-clients__icon" width="106" height="60"><use href="./images/icons.svg#icon-logosecond"></use> </svg> </a> 
              </li>
-             <li>
+             <li class="section-clients__tumb">
                 <a class="section-clients__link link" href=""> <svg class="section-clients__icon" width="106" height="60"><use href="./images/icons.svg#icon-logothird"></use> </svg> </a> 
              </li>
-             <li>
+             <li class="section-clients__tumb">
                 <a class="section-clients__link link" href=""> <svg class="section-clients__icon" width="106" height="60"><use href="./images/icons.svg#icon-logofourth"></use> </svg> </a> 
              </li>
-             <li>
+             <li class="section-clients__tumb">
                 <a class="section-clients__link link" href=""> <svg class="section-clients__icon" width="106" height="60"><use href="./images/icons.svg#icon-logofifth"></use> </svg> </a> 
              </li>
-             <li>
+             <li class="section-clients__tumb">
                 <a class="section-clients__link link" href=""> <svg class="section-clients__icon" width="106" height="60"><use href="./images/icons.svg#icon-logosixth"></use> </svg> </a> 
              </li>           
         </ul>
         </div>
     </section>
-</div> -->
-
-
 </main>
-                                    <!-- підвал -->
-<!-- <footer class="footer">
+
+        <!-- підвал -->
+<footer class="footer">
     <div class="container">
-        <div class="footer__box">
+    <div class="footer__box-top">
+        <div class="footer__box-address">
         <a href="./index.html" class="logo">
         <p class="logo__text logo__text--inverse" lang="en"><span class="logo__accent">Web</span>Studio</p>
         </a>
@@ -290,7 +286,7 @@
         </ul>
         </address>
         </div>
-        <div class="footer__box">
+        <div class="footer__box-invite">
             <h3 class="footer__title">ПРИЄДНУЙТЕСЬ</h3>
             <ul class="footer__social-icons list">
                 <li class="footer__social-item"><a class="footer__social-link link"> <svg class="footer__social-icon" width="20" height="20"><use href="./images/icons.svg#icon-instagram"></use> </svg> </a></li>
@@ -299,7 +295,8 @@
                 <li class="footer__social-item"><a class="footer__social-link link"> <svg class="footer__social-icon" width="20" height="20"><use href="./images/icons.svg#icon-linkedin"></use> </svg> </a></li>
             </ul>
         </div>
-        <div class="footer__box">
+    </div>
+        <div class="footer__box-spam">
             <h3 class="footer__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
         <span class="footer__feedback">
         <label for="mail"></label>
@@ -313,7 +310,7 @@
         </div>
         </div>
     </div>
-</footer> -->
+</footer>
 <script src="./js/modal.js"></script>   
 </body>
 </html>
