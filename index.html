@@ -11,88 +11,92 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body class="page">
-    <!-- Шапка сайту -->
-<header class="header">
+    
+ <!--Header-->
+ <header class="header">
     <div class="container">
-        <!-- логотип -->
         <a href="./index.html" class="logo">
             <p class="logo__text" lang="en"><span class="logo__accent">Web</span>Studio</p> 
         </a>
-        <!-- навігація сайту -->
-        <!-- <ul class="site-nav list">
-            <li> <a class="site-nav__link site-nav__link--current" href="./index.html">Cтудія</a></li>
-            <li> <a class="site-nav__link" href="./portfolio.html">Портфоліо</a></li>
-            <li> <a class="site-nav__link" href="">Контакти</a></li>
-        </ul>
-        </nav> -->
-        <!-- навігація авторизації -->
-        <!-- <ul class="auth-nav list">
-            <li>
-                <a class="auth-nav__link-mail" href="mailto:info@devstudio.com">
-                    <svg class="auth-nav__icon" width="16" height="12">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                    <span>info@devstudio.com</span>
-                </a>
+      <nav class="nav">
+        <div class="nav-menu">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--accent" href="./index.html">Студія</a>
             </li>
-            <li>
-                <a class="auth-nav__link-tel" href="tel:+380961111111">
-                    <svg class="auth-nav__icon" width="10" height="16">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>   
-                    <span>+38 096 111 11 11</span>
-                </a>
-            </li>
-        </ul> -->
-        <button type="button" class="burger"
-        data-menu-button 
-        aria-expanded="false"
-        aria-controls="menu-container">
-      <svg width="40" height="40" aria-label="перемикач мобільного меню">
-        <use class="burger__icon--open" href="./images/icons.svg#icon-menu_40px"></use>
-        <use class="burger__icon--close" href="./images/icons.svg#icon-close_40px"></use>
-      </svg>
-    </button>
-    <div class="menu-container" id="menu-container" data-menu>
-        <!-- навігація сайту -->
-        <nav class="header__navigation">
-        <ul class="site-nav list">
-            <li> <a class="site-nav__link site-nav__link--current" href="./index.html">Cтудія</a></li>
-            <li> <a class="site-nav__link" href="./portfolio.html">Портфоліо</a></li>
-            <li> <a class="site-nav__link" href="">Контакти</a></li>
-        </ul>
-        </nav>
-        <!-- навігація авторизації -->
-        <ul class="auth-nav list">
-            <li>
-                <a class="auth-nav__link-mail" href="mailto:info@devstudio.com">
-                    <span>info@devstudio.com</span>
-                </a>
-            </li>
-            <li>
-                <a class="auth-nav__link-tel" href="tel:+380961111111">   
-                    <span>+38 096 111 11 11</span>
-                </a>
-            </li>
-        </ul>
-        <ul class="mobile-menu__social--flex list">
-            <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link" href="">Instagram</a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link" href="">Twitter</a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link" href="">Facebook</a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link" href="">LinkedIn</a>
-            </li>
-        </ul>
+            <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="address list">
+        <li class="address__item">
+          <a class="address__link" href="mailto:info@devstudio.com">
+            <svg class="address__icons" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="address__item">
+          <a class="address__link" href="tel:+380961111111">
+            <svg class="address__icons" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+      <button type="button" class="burger"
+          data-menu-button 
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="перемикач мобільного меню">
+          <use class="burger__icon--open" href="./images/icons.svg#icon-menu_40px"></use>
+          <use class="burger__icon--close" href="/images/icons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu" id="mobile-menu" data-menu>
+          <div class="mobile-menu__nav">
+            <ul class="mobile-menu__list list">
+              <li class="mobile-menu__item">
+                <a class= "mobile-menu__link mobile-menu__link--current" href="./index.html">Студія</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class= "mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class= "mobile-menu__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-menu__address">
+            <ul class="list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__address--blue" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__address--grey" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__social--flex list">
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="">Twitter</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="">Facebook</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+      </div>
     </div>
-
-    </div>
-</header>
+  </header>
 
 <main>
 
@@ -216,7 +220,7 @@
                     <div class="section-task__thumb">
                         <picture>
                             <source srcset="./images/task-1-desctop-1x.jpg 1x, ./images/task-1-desctop-2x.jpg 2x" media="(min-width: 1200px)">
-                            <img src="./images/img.jpg" alt="клавіатура" width="370" height="294"/>
+                            <img src="./images/task-1-desctop-3x.jpg" alt="клавіатура" width="370" height="294"/>
                           </picture>
                         <h3 class="section-task__overlay">ДЕСКТОПНІ ДОДАТКИ</h3>
                     </div>
@@ -226,7 +230,7 @@
                     <div class="section-task__thumb">
                         <picture>
                             <source srcset="./images/task-2-desctop-1x.jpg 1x, ./images/task-2-desctop-2x.jpg 2x" media="(min-width: 1200px)">
-                            <img src="./images/img2.jpg" alt="ноутбук" width="370" height="294"/>
+                            <img src="./images/task-2-desctop-3x.jpg" alt="ноутбук" width="370" height="294"/>
                           </picture>
                         <h3 class="section-task__overlay">МОБІЛЬНІ ДОДАТКИ</h3>
                     </div>
@@ -235,7 +239,7 @@
                     <div class="section-task__thumb">
                         <picture>
                             <source srcset="./images/task-3-desctop-1x.jpg 1x, ./images/task-3-desctop-2x.jpg 2x" media="(min-width: 1200px)">
-                            <img src="./images/img3.jpg" alt="планшет" width="370" height="294"/>
+                            <img src="./images/task-3-desctop-3x.jpg" alt="планшет" width="370" height="294"/>
                           </picture>
                         <h3 class="section-task__overlay">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>  
                     </div>
