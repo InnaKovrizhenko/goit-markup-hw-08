@@ -14,7 +14,6 @@
     <!-- Шапка сайту -->
 <header class="header">
     <div class="container">
-        <!-- <nav class="header__navigation"> -->
         <!-- логотип -->
         <a href="./index.html" class="logo">
             <p class="logo__text" lang="en"><span class="logo__accent">Web</span>Studio</p> 
@@ -45,7 +44,7 @@
                 </a>
             </li>
         </ul> -->
-        <button type="button" class="burger is-open"
+        <button type="button" class="burger"
         data-menu-button 
         aria-expanded="false"
         aria-controls="menu-container">
@@ -55,7 +54,41 @@
       </svg>
     </button>
     <div class="menu-container" id="menu-container" data-menu>
-        Контент
+        <!-- навігація сайту -->
+        <nav class="header__navigation">
+        <ul class="site-nav list">
+            <li> <a class="site-nav__link site-nav__link--current" href="./index.html">Cтудія</a></li>
+            <li> <a class="site-nav__link" href="./portfolio.html">Портфоліо</a></li>
+            <li> <a class="site-nav__link" href="">Контакти</a></li>
+        </ul>
+        </nav>
+        <!-- навігація авторизації -->
+        <ul class="auth-nav list">
+            <li>
+                <a class="auth-nav__link-mail" href="mailto:info@devstudio.com">
+                    <span>info@devstudio.com</span>
+                </a>
+            </li>
+            <li>
+                <a class="auth-nav__link-tel" href="tel:+380961111111">   
+                    <span>+38 096 111 11 11</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="mobile-menu__social--flex list">
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link" href="">LinkedIn</a>
+            </li>
+        </ul>
     </div>
 
     </div>
@@ -63,8 +96,8 @@
 
 <main>
 
-                                            <!-- секція шапка -->
-        <!-- <section class="hat">
+        <!-- секція шапка -->
+        <section class="hat">
             <div class="container">
             <h1 class="hat__title">Ефективні рішення для вашого бізнесу</h1>
             <button type="button" class="button" data-modal-open>Замовити послугу</button>
@@ -117,7 +150,8 @@
                             <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </span>
-                            Погоджуюся з розсилкою та приймаю
+                        <span class="modal-form__text-agreement">Погоджуюся з розсилкою та приймаю</span>
+                            
                         <a href="" class="modal-form__link-checkbox">Умови договору</a></label>
                         </div>
                         
@@ -126,7 +160,7 @@
                 </div>
             </div>
             </div>
-        </section> -->
+        </section>
 
 <!-- секція особливості -->
         <section class="section-features">
@@ -180,20 +214,29 @@
             <ul class="section-task__list list">
                 <li class="section-task__item">
                     <div class="section-task__thumb">
-                        <img src="./images/img.jpg" alt="клавіатура" width="370" height="294"/>   
+                        <picture>
+                            <source srcset="./images/task-1-desctop-1x.jpg 1x, ./images/task-1-desctop-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img src="./images/img.jpg" alt="клавіатура" width="370" height="294"/>
+                          </picture>
                         <h3 class="section-task__overlay">ДЕСКТОПНІ ДОДАТКИ</h3>
                     </div>
                     
                 </li>
                 <li class="section-task__item">
                     <div class="section-task__thumb">
-                        <img src="./images/img2.jpg" alt="ноутбук" width="370" height="294"/>    
+                        <picture>
+                            <source srcset="./images/task-2-desctop-1x.jpg 1x, ./images/task-2-desctop-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img src="./images/img2.jpg" alt="ноутбук" width="370" height="294"/>
+                          </picture>
                         <h3 class="section-task__overlay">МОБІЛЬНІ ДОДАТКИ</h3>
                     </div>
                 </li>
                 <li class="section-task__item">
                     <div class="section-task__thumb">
-                        <img src="./images/img3.jpg" alt="планшет" width="370" height="294"/>
+                        <picture>
+                            <source srcset="./images/task-3-desctop-1x.jpg 1x, ./images/task-3-desctop-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img src="./images/img3.jpg" alt="планшет" width="370" height="294"/>
+                          </picture>
                         <h3 class="section-task__overlay">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>  
                     </div>
                 </li>
@@ -208,7 +251,12 @@
             <h2 class="section-team__title">Наша команда</h2>
             <ul class="section-team__list list">
                 <li class="section-team__card">
-                    <img class="section-team__photo" src="./images/imgd.jpg" alt="Ігор Дем'яненко" width="270" height="260"/>
+                    <picture>
+                        <source srcset="./images/team-D-desctop-1x.jpg 1x, ./images/team-D-desctop-2x.jpg 2x, ./images/team-D-desctop-3x.jpg 3x" media="(min-width: 1200px)">
+                        <source srcset="./images/team-D-tablet-1x.jpg 1x, ./images/team-D-tablet-2x.jpg 2x, ./images/team-D-tablet-3x.jpg 3x" media="(min-width: 768px)">
+                        <source srcset="./images/team-D-mobile-1x.jpg 1x, ./images/team-D-mobile-2x.jpg 2x, ./images/team-D-mobile-3x.jpg 3x" media="(max-width: 767px)">
+                        <img class="section-team__photo" src="./images/imgd.jpg" alt="Ігор Дем'яненко" width="270" height="260"/>
+                      </picture>
                     <h3 class="section-team__name">Ігор Дем'яненко</h3>
                     <p class="section-team__profession" lang="en">Product Designer</p>
                     <ul class="social-icons list">
@@ -219,7 +267,12 @@
                     </ul>
                 </li>
                 <li class="section-team__card">
-                    <img class="section-team__photo" src="./images/imgr.jpg" alt="Ольга Рєпіна" width="270" height="260"/>
+                    <picture>
+                        <source srcset="./images/team-R-desctop-1x.jpg 1x, ./images/team-R-desctop-2x.jpg 2x, ./images/team-R-desctop-3x.jpg 3x" media="(min-width: 1200px)">
+                        <source srcset="./images/team-R-tablet-1x.jpg 1x, ./images/team-R-tablet-2x.jpg 2x, ./images/team-R-tablet-3x.jpg 3x" media="(min-width: 768px)">
+                        <source srcset="./images/team-R-mobile-1x.jpg 1x, ./images/team-R-mobile-2x.jpg 2x, ./images/team-R-mobile-3x.jpg 3x" media="(max-width: 767px)">
+                        <img class="section-team__photo" src="./images/imgr.jpg" alt="Ольга Рєпіна" width="270" height="260"/>
+                      </picture>
                     <h3 class="section-team__name">Ольга Рєпіна</h3>
                     <p class="section-team__profession" lang="en">Frontend Developer</p>
                     <ul class="social-icons list">
@@ -230,7 +283,12 @@
                     </ul>                
                 </li>
                 <li class="section-team__card">
-                    <img class="section-team__photo" src="./images/imgt.jpg" alt="Микола Тарасов" width="270" height="260"/>
+                    <picture>
+                        <source srcset="./images/team-T-desctop-1x.jpg 1x, ./images/team-T-desctop-2x.jpg 2x, ./images/team-T-desctop-3x.jpg 3x" media="(min-width: 1200px)">
+                        <source srcset="./images/team-T-tablet-1x.jpg 1x, ./images/team-T-tablet-2x.jpg 2x, ./images/team-T-tablet-3x.jpg 3x" media="(min-width: 768px)">
+                        <source srcset="./images/team-T-mobile-1x.jpg 1x, ./images/team-T-mobile-2x.jpg 2x, ./images/team-T-mobile-3x.jpg 3x" media="(max-width: 767px)">
+                        <img class="section-team__photo" src="./images/imgt.jpg" alt="Микола Тарасов" width="270" height="260"/>
+                      </picture>
                     <h3 class="section-team__name">Микола Тарасов</h3>
                     <p class="section-team__profession" lang="en">Marketing</p>
                     <ul class="social-icons list">
@@ -241,7 +299,12 @@
                     </ul>                
                 </li>
                 <li class="section-team__card">
-                    <img class="section-team__photo" src="./images/imge.jpg" alt="Михайло Єрмаков" width="270" height="260"/>
+                    <picture>
+                        <source srcset="./images/team-E-desctop-1x.jpg 1x, ./images/team-E-desctop-2x.jpg 2x, ./images/team-E-desctop-3x.jpg 3x" media="(min-width: 1200px)">
+                        <source srcset="./images/team-E-tablet-1x.jpg 1x, ./images/team-E-tablet-2x.jpg 2x, ./images/team-E-tablet-3x.jpg 3x" media="(min-width: 768px)">
+                        <source srcset="./images/team-E-mobile-1x.jpg 1x, ./images/team-E-mobile-2x.jpg 2x, ./images/team-E-mobile-3x.jpg 3x" media="(max-width: 767px)">
+                        <img class="section-team__photo" src="./images/imge.jpg" alt="Михайло Єрмаков" width="270" height="260"/>
+                      </picture>
                     <h3 class="section-team__name">Михайло Єрмаков</h3>
                     <p class="section-team__profession" lang="en">UI Designer</p>
                     <ul class="social-icons list">
